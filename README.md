@@ -12,7 +12,7 @@ In the second phase, I intend to create classification model algorithms and impl
 
 ### Second Phase
 
-After referring to similar projects and study materials on Outlier Detection, I learned that datasets with binary columns does not require outlier detection. To prove this, I performed model evaluation on dataset with outliers removed and without. I observed that both values were the same. Thus, after removing duplicates, I have gone to feature selection.
+After referring to similar projects and study materials on Outlier Detection, I learned that datasets with binary columns does not require outlier detection. To prove this, I performed model evaluation on dataset with outliers removed and without. I observed that both values were the same. Thus, after removing duplicates, I skipped outlier detection and moved to feature selection.
 
 Using K-Means Clustering, I performed feature selection and was provided with 6 features.
 
