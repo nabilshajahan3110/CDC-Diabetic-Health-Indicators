@@ -74,6 +74,6 @@ This project demonstrates the power of machine learning in predicting diabetes r
 
 ### Future Scope
 
-✔ Experimenting with deep learning models for improved accuracy.
-✔ Deploying the model as a web-based predictive tool.
-✔ Feature engineering for more insightful predictors.
+1. Experimenting with deep learning models for improved accuracy.
+2. Deploying the model as a web-based predictive tool.
+3. Feature engineering for more insightful predictors.
