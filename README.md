@@ -1,23 +1,79 @@
 ## CDC-Diabetic-Health-Indicators
 
-### First Phase
+### Overview
 
-A machine learning project on the BRFSS2015 CDC dataset. In this dataset, I have implemented classification model algorithms to predict outcomes of responders as diabetic or non-diabetic/prediabetic.
+This project aims to analyze and predict diabetes-related health indicators using machine learning techniques. Diabetes is a chronic disease affecting millions of individuals worldwide, and understanding its health indicators is crucial for early detection and prevention. By leveraging the CDC Diabetes Health Indicators Dataset, this project explores various statistical insights and applies predictive modeling to identify key risk factors.
 
-As the first step, I have imported all the necessary libraries, loaded the dataset, and executed preliminary codes to understand all the properties of the dataset such as shape, statistics summary, feature details, etc.
+### Dataset
 
-I continued on my work from the first step and performed univariate, bivariate, and multivariate analysis. These analyses and visualizations helped me to understand the dataset in depth and provide vital information regarding the subject matter. As part of outlier detection, I performed IQR and Z-Score methods. The former method reduced my dataset to 80k instances while the later method reduced it to 160k instances. Since many columns still displayed varied skewness and high kurtosis, I performed Log Transformation and Sqrt Transformation on both sets of datasets. I was able to reduce the skewness and kurtosis further.
+The dataset used in this project consists of health indicators collected from multiple respondents across the United States. The key features include:
 
-In the second phase, I intend to create classification model algorithms and implement all four sets of datasets and make predictions. Subsequently, I will run extensive model evaluation metrices to determine the best dataset and model.
+**Demographics**: Age, Gender, BMI, Physical Activity
 
-### Second Phase
+**Health Conditions**: Hypertension, High Cholesterol, Stroke, Heart Disease
 
-I chose to work with the datasets with outliers removed using Z-Score Method.
+**Behavioral Factors**: Smoking, Alcohol Consumption, Physical Inactivity
 
-Using K-Means Clustering, I performed feature selection and was provided with 6 features.
+**Medical Conditions**: Diabetes Status (Diagnosed, Undiagnosed, No Diabetes)
 
-After performing train-test split and scaling, to handle dataset imbalance, I performed NearMiss method.
+### Technologies Used
 
-Finally I performed model initialization and evaluation metrices. The best performing model is k-NN with 82.98% accuracy, and high recall and precision values.
+Python
 
-In the third phase, I will perform Hyperparameter tuning to improve model performances and create a pipeline for the best model.
+Jupyter Notebook
+
+Pandas, NumPy (Data Processing)
+
+Matplotlib, Seaborn (Data Visualization)
+
+Scikit-Learn (Machine Learning)
+
+### Exploratory Data Analysis (EDA)
+
+The project begins with data exploration, which includes:
+
+**Handling missing values and outliers**
+
+**Visualizing feature distributions and correlations**
+
+**Identifying patterns in diabetes prevalence**
+
+### Machine Learning Models
+
+The following classification machine learning models were implemented and evaluated:
+
+**Logistic Regression:**	**70.56%**
+
+**Random Forest:** **65.25%**
+
+**Decision Tree:** **65.63%**
+
+**Support Vector Machine:** **62.21%**
+
+**k-Nearest Neighbor:** **80.16%**
+
+**MLP Classifier:** **65.57%**
+
+### Performance Metrics Evaluated:
+
+Confusion Matrix
+
+Classification Report
+
+ROC Curve & AUC Score
+
+### Key Findings
+
+1. Certain behavioral and health factors significantly contribute to diabetes risk.
+2. Feature importance analysis shows that BMI, Hypertension, and Physical Inactivity are strong predictors.
+3. Machine learning models successfully classify individuals based on diabetes risk.
+
+### Conclusion
+
+This project demonstrates the power of machine learning in predicting diabetes risk using health indicators. The findings can be utilized for public health awareness, preventive measures, and early diagnosis strategies.
+
+### Future Scope
+
+✔ Experimenting with deep learning models for improved accuracy.
+✔ Deploying the model as a web-based predictive tool.
+✔ Feature engineering for more insightful predictors.
